@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diana Pardo">
+    <meta name="keywords" content="html, css, xml, javascript, asistentes virtuales, virtual assistants">
+    <meta name="description" content="SnapVAs - Servicios profesionales de asistentes virtuales">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+      <title>SnapVAs - professional Virtual Assistants</title> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <meta name="google-site-verification" content="GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/SVEstilos.css" rel="stylesheet">
+</head>
+<body>
+    <header>   
+      <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container-fluid px-3">
+          <!-- ===== MOBILE CONTAINER (hidden on desktop) ===== -->
+          <div class="navbar-mobile-container d-flex d-lg-none w-100 align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="IMG/Logo_snapVA_black.png" alt="SnapVAS Logo" class="logo-img">
+            </a>
+            
+            <!-- Spacer to center Hire button -->
+            <div class="mobile-spacer flex-grow-1"></div>
+            
+            <!-- Hire Now Button -->
+            <a href="contact.html" class="btn hire-now-btn mx-2">Hire Now</a>
+            
+            <!-- Spacer to balance space -->
+            <div class="mobile-spacer flex-grow-1"></div>
+            
+            <!-- Menu Toggle -->
+            <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- ===== DESKTOP CONTAINER (hidden on mobile) ===== -->
+          <div class="d-none d-lg-flex w-100 align-items-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="IMG/Logo_snapVA_black.png" alt="SnapVAS Logo" class="logo-img">
+            </a>
+
+            <!-- Desktop Menu Items -->
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="About_Us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Desktop Hire Button -->
+            <a href="contact.html" class="btn hire-now-btn ms-3 d-lg-inline-block">Hire Now</a>
+          </div>
+
+          <!-- ===== COLLAPSIBLE MENU (mobile only) ===== -->
+          <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="About_Us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carrusel de banners (5 banners) -->
+    <div class="container" id="subintro">
+        <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <!-- Path modificado para ondulaciones más pronunciadas -->
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" 
+                opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" 
+                opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" 
+                class="shape-fill"></path>
+        </svg>
+        </div> 
+    <div id="Mainintro" class="row g-12">
+
+            <div id="Mainintro-s1" class="col-md-7">
+                <h2>From Hiring to Thriving! Snap VAs Connects You with the Best in Virtual Assistant Talent.</h2>
+                <br>
+                <h3 style="color: rgb(86,71,151);"> CUT COSTS  BOOST EFFICIENCY  SCALE FASTER</h3>
+                <br>
+                <h4>
+                    Over 70% of small businesses save up to 78%  by hiring virtual assistants.
+                    With Snap VA, unlock smarter, leaner growth through top-tier virtual assistants
+                    ready to help you thrive without the overhead.
+                </h4>
+                <div class="col-12">
+                <a href="contact.html" class="btn btn-primary" style="background-color: blueviolet;">Start Hiring</a>
+                <a href="careers.html" class="btn btn-primary" style="background-color: whitesmoke; color: rgb(86,71,151);">Apply for a Job</a>
+                </div>
+            </div>
+            <div id="Mainintro-s2"  class="col-12 col-md-5 d-flex justify-content-center align-items-center">
+                <img src="IMG/single_girl.png" class="img-fluid" alt="Virtual Assistants Pro">
+            </div>
+        </div>
+      
+    </div>
+  
+<section>
+ <div class="container" id="moresnap">
+    <div class="image-section">
+      <div class="image-wrapper">
+        <img class="background" src="IMG/back_pareja_1.png" alt="Background" />
+        <img class="foreground" src="IMG/pareja_1.png" alt="Snap VAs Team" />
+      </div>
+    </div>
+    <div class="text-section">
+      <h2>Less Stress - <strong>More Snap</strong></h2>
+      <h3>WHY CHOOSE <strong>SNAP VA'S?</strong></h3>
+
+      <div class="feature">
+        <b>HIRING SOLUTIONS THAT FUEL RAPID GROWTH</b>
+        Boost productivity by 3x and cut recruitment time in half — scale your team effortlessly with Snap VA. We handle the hard work, so you don’t have to.
+      </div>
+      <div class="feature">
+        <b>PERSONALIZED TRAINING & SUPPORT</b>
+        Need multiple VAs? Our expert Trainer will join your first session, and after that we will create custom training materials, and manage onboarding for future hires — freeing you from training hassles.
+      </div>
+      <div class="feature">
+        <b>ACCESS ONLY THE BEST WORLDWIDE TALENT</b>
+        Our bilingual, college-educated Virtual Assistants undergo rigorous multi-stage assessments. We find the perfect match for your timezone, language, and skill needs — anywhere in the world.
+      </div>
+      <div class="feature">
+        <b>SAVE UP TO 70% ON LABOR COSTS</b>
+        Leverage nearshore talent to cut expenses without sacrificing quality or communication.
+      </div>
+      <div class="feature">
+        <b>PROVEN SUCCESS: 98% CLIENT SATISFACTION</b>
+        Our clients choose us — and stay — because we consistently deliver exceptional value and results that drive their growth.
+      </div>
+      <div class="feature">
+        <b>HASSLE-FREE HIRING IN DAYS</b>
+        Get matched with top candidates ready to start within 72 hours. No more long waits or endless interviews.
+      </div>
+
+      <a class="cta-button" href="contact.html" target="_blank">Get Your Ideal VA <strong>TODAY!</strong></a>
+    </div>
+    </div>
+</section>    
+<!-- Section Hire Us -->
+<section id="hire" class="py-5 snap-section">
+    <div class="main-container HireMain">
+        <div class="wave-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" 
+                    opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" 
+                    opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" 
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        
+        <h1 class="services-title">Our Services</h1>
+        <p class="services-subtitle">Work smarter get a virtual assistant on your team.</p>
+
+        <div class="services-showcase">
+   <!-- Carousel Wrapper -->
+            <div id="servicesCarouselDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel" data-bs-wrap="true">
+  <!-- Dots circulares -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#servicesCarouselDesktop" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#servicesCarouselDesktop" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#servicesCarouselDesktop" data-bs-slide-to="2"></button>
+  </div>
+
+
+  <!-- Desktop Carousel (3 por slide) -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+             <img src="IMG/admin_1.png" alt="Administrative Assistance">
+            </div>
+            <h3>Administrative Assistance</h3>
+            <a href="2. Adm_Assist.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We handle your daily tasks efficiently so you can focus on growing your business.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/cx_serv_1.png" alt="Customer Support">
+            </div>
+            <h3>Customer Support</h3>
+            <a href="1. CX_SERVICE_HIRE.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a> 
+            <div class="service-details">
+              <p>We provide friendly and professional support to keep your customers satisfied.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/dig_mark_1.png" alt="Digital Marketing">
+            </div>
+            <h3>Digital Marketing</h3>
+            <a href="3.dig_mark_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We create strategies that boost your online presence and drive real results.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row">
+        <!-- Service 4 -->
+        <div class="col-lg-4">
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/legal_as_1.png" alt="Legal Assistance">
+            </div>
+            <h3>Legal Assistance</h3>
+            <a href="4.leg_assist_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We offer legal support to help you make decisions with confidence and compliance.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/Log_1.png" alt="Logistics">
+            </div>
+            <h3>All about Logistics</h3>
+            <a href="5.log_assistant_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We optimize your supply chain to ensure smooth and cost-effective operations.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/trn_1.png" alt="Training Support">
+            </div>
+            <h3>Training Support</h3>
+            <a href="6.training_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We design and deliver training programs to empower your team's performance.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="row">
+        <!-- Service 7 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/Staff_1.png" alt="Staffing and Recruiting">
+            </div>
+            <h3>Staffing and Recruiting</h3>
+            <a href="7. staff_rec_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We connect you with the right talent to strengthen and scale your business.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/dev_sec_1.png" alt="Devops & Secops">
+            </div>
+            <h3>Devops & Secops</h3>
+            <a href="8.dev_sec_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We streamline development and secure your systems for maximum efficiency.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="col-lg-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="IMG/dig_mark_1.png" alt="Graphic Designer">
+            </div>
+            <h3>Graphic Designer</h3>
+            <a href="9.grap_Des_hire.html" class="card-link">
+              <h3>Get more Information</h3>
+            </a>
+            <div class="service-details">
+              <p>We transform brand vision into visual strategy, crafting designs that don't just look good—they drive growth.</p>
+              <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarouselDesktop" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#servicesCarouselDesktop" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ================= MOBILE VERSION (1 servicio por slide) ================= -->
+<div id="servicesCarouselMobile" class="carousel slide d-block d-lg-none" data-bs-ride="carousel" data-bs-wrap="true">
+    <!-- Indicators para Mobile -->
+<div class="carousel-indicators d-flex d-lg-none">
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="2"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="3"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="4"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="5"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="6"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="7"></button>
+  <button type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide-to="8"></button>
+</div>
+  <div class="carousel-inner">
+    <!-- Service 1 -->
+    <div class="carousel-item active">
+        <div class="service-card">
+        <div class="service-icon">
+       <img src="IMG/admin_1.png" alt="Administrative Assistance">
+        </div>
+        <h3>Administrative Assistance</h3>
+        <a href="2. Adm_Assist.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We handle your daily tasks efficiently so you can focus on growing your business.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/cx_serv_1.png" alt="Customer Support">
+        </div>
+        <h3>Customer Support</h3>
+        <a href="1. CX_SERVICE_HIRE.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We provide friendly and professional support to keep your customers satisfied.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/dig_mark_1.png" alt="Digital Marketing">
+        </div>
+        <h3>Digital Marketing</h3>
+        <a href="3.dig_mark_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We create strategies that boost your online presence and drive real results.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+         <img src="IMG/legal_as_1.png" alt="Legal Assistance">
+        </div>
+        <h3>Legal Assistance</h3>
+        <a href="4.leg_assist_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We offer legal support to help you make decisions with confidence and compliance.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/Log_1.png" alt="Logistics">
+        </div>
+        <h3>All about Logistics</h3>
+        <a href="5.log_assistant_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We optimize your supply chain to ensure smooth and cost-effective operations.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/trn_1.png" alt="Training Support">
+        </div>
+        <h3>Training Support</h3>
+        <a href="6.training_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We design and deliver training programs to empower your team's performance.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 7 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/Staff_1.png" alt="Staffing and Recruiting">
+        </div>
+        <h3>Staffing and Recruiting</h3>
+        <a href="7. staff_rec_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We connect you with the right talent to strengthen and scale your business.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 8 -->
+    <div class="carousel-item">
+      <div class="service-card"> 
+        <div class="service-icon">
+        <img src="IMG/dev_sec_1.png" alt="Devops & Secops">
+        </div>
+        <h3>Devops & Secops</h3>
+        <a href="8.dev_sec_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We streamline development and secure your systems for maximum efficiency.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 9 -->
+    <div class="carousel-item">
+      <div class="service-card">
+        <div class="service-icon">
+        <img src="IMG/dig_mark_1.png" alt="Graphic Designer">
+        </div>
+        <h3>Graphic Designer</h3>
+        <a href="9.grap_Des_hire.html" class="card-link">
+          <h3>Get more Information</h3>
+        </a>
+        <div class="service-details">
+          <p>We transform brand vision into visual strategy, crafting designs that don't just look good—they drive growth.</p>
+          <a href="contact.html" class="btn hire-now-btn">Hire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#servicesCarouselMobile" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+    </div>
+        </div>
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" 
+                    opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" 
+                    opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" 
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="snaps-section">
+    <h2><span class="highlight">4 Easy</span> <span class="bold-purple">Snaps</span> To Your <span class="highlight-black">Perfect VA</span></h2>
+    
+    <div class="snaps-container">
+      <div class="snap-card">
+        <p>Tell us who you're<br><strong>looking for:</strong> skills, personality, the works.<br>We’re all ears.</p>
+        <img src="IMG/snap_1.png" alt="Snap 1">
+      </div>
+      <div class="divider"></div>
+
+      <div class="snap-card">
+        <p>Meet your handpicked VA shortlist.<br>Jump into <strong>virtual interviews</strong> and pick your fave!</p>
+        <img src="IMG/snap_2.png" alt="Snap 2">
+      </div>
+      <div class="divider"></div>
+
+      <div class="snap-card">
+        <p>Send us the <strong>start date</strong> and any setup your VA needs.<br>We’ll make it smooth and easy.</p>
+        <img src="IMG/snap_3.png" alt="Snap 3">
+      </div>
+      <div class="divider"></div>
+
+      <div class="snap-card">
+        <p><strong>Showtime!</strong> Your VA gets to work and your dream team starts growing.</p>
+        <img src="IMG/snap_4.png" alt="Snap 4">
+      </div>
+    </div>
+
+    <div class="cta-container">
+      <h3>Ready to Thrive with Us? <span class="highlight-black">Join the Snap VA Team</span></h3>
+      <p>At <strong>Snap VA</strong>, we believe great talent deserves meaningful opportunities, no matter where you are in the world.<br>
+        When you join our global team of Virtual Assistants, you become part of a community that values growth, flexibility, and excellence.</p>
+      <a href="careers.html" target="_blank" class="cta-button">Apply For a Job</a>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer-custom py-5">
+  <div class="container">
+    <div class="row justify-content-between">
+    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+      <div class="d-flex flex-column"> <!-- Changed to flex-column -->
+        <div class="d-flex align-items-center mb-3">
+           <a href="index.html">
+        <img src="IMG/Logo_snapVA_black.png" alt="SnapVAS Logo" style="max-height: 30px;">
+          </a>
+          <div class="ms-3 d-flex gap-2">
+            <a href="https://www.instagram.com/snapvas?igsh=ZjRjZTB4YjRibnE2" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://co.linkedin.com/in/snap-vas-587385365" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-info"> <!-- Wrapped contact info in separate div -->
+          <p class="mb-2">1309 Coffeen Avenue Suite 1200 Sheridan Wyoming 82801</p>
+          <p class="mb-2">service@snapvas.com</p>
+          <p>USA +1307-333-9811</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Services -->
+      <div class="col-6 col-sm-3 col-md-2">
+        <h6><a class="nav-link" href="services.html">Services</a></h6>
+        <ul>
+          <li><a class="nav-link" href="services.html">Our Solutions</a></li>
+          <li><a class="nav-link" href="services.html">Dedicated VAs</a></li>
+          <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div class="col-6 col-sm-3 col-md-2">
+        <h6><a class="nav-link" href="About_Us.html">About us</a></h6>
+        <ul class="list-unstyled">
+          <li><a href="resources.html">Terms of Services</a></li>
+          <li><a href="resources.html">Privacy Policy</a></li>
+        </ul>
+        <a href="applicant_form.html" target="_blank" class="btn-get-hired mt-2">Get Hired</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/+13073339811?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- Botón de llamada -->
+    <a href="tel:+13073339811" class="call-btn">
+        <i class="fas fa-phone fa-2x"></i>
+    </a>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/SVBackEnd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GLOBAL SERVICE POPUP: add once, at the end of the page (before </body>) -->
+<!--<div id="service-popup" class="service-popup" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="popup-content" role="document">
+    <button class="close-btn" aria-label="Close">&times;</button>
+    <div class="popup-inner">
+      <h2 id="popup-title">Service Title</h2>
+      <p id="popup-description-short">Short service description goes here...</p>
+      <div id="popup-description-long" class="popup-description-long">
+        <p>Full detailed service description goes here...</p>
+      </div>
+
+      
+      <div class="popup-image">
+        <img id="popup-img" src="IMG/pareja_1.png" alt="Service illustration" />
+      </div>
+
+      
+      <div class="popup-slogan">
+        <p id="popup-slogan">Let’s start thriving your business now!</p>
+      </div>
+
+      <a id="popup-link" href="contact.html" class="btn hire-now-btn">Hire Now</a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const popup = document.getElementById('service-popup');
+  if (!popup) return;
+
+  const titleEl = document.getElementById('popup-title');
+  const descShortEl = document.getElementById('popup-description-short');
+  const descLongEl = document.getElementById('popup-description-long');
+  const imgEl = document.getElementById('popup-img');
+  const sloganEl = document.getElementById('popup-slogan');
+  const linkEl  = document.getElementById('popup-link');
+  const closeEl = popup.querySelector('.close-btn');
+
+  const serviceDescriptions = {
+    "Administrative Assistance": {
+      short: "We handle your daily tasks efficiently so you can focus on growing your business.",
+      long: "From scheduling and data entry to document management and reporting, our virtual assistants provide reliable, detail-oriented support. We help you reclaim valuable hours so you can concentrate on scaling your business and strengthening client relationships.",
+      img: "IMG/pareja_1.png",
+      slogan: "Boost productivity with reliable support today!"
+    },
+    "Customer Support": {
+      short: "We provide friendly and professional support to keep your customers satisfied.",
+      long: "Our trained support team ensures your clients feel heard and valued. We handle inquiries, troubleshooting, and follow-ups with empathy and precision, enhancing loyalty and creating positive brand experiences 24/7.",
+      img: "IMG/pareja_1.png",
+      slogan: "Turn every interaction into customer loyalty!"
+    },
+    "Digital Marketing": {
+      short: "We create strategies that boost your online presence and drive real results.",
+      long: "From SEO and social media management to paid campaigns and content strategy, our digital marketing experts design data-driven solutions that maximize reach, engagement, and conversion for your brand.",
+      img: "IMG/pareja_1.png",
+      slogan: "Let’s grow your digital footprint now!"
+    },
+    "Legal Assistance": {
+      short: "We offer legal support to help you make decisions with confidence and compliance.",
+      long: "Our specialists provide document review, contract drafting, compliance monitoring, and risk analysis. With SNAPVAS, you get clear, reliable guidance that protects your business and empowers informed decision-making.",
+      img: "IMG/pareja_1.png",
+      slogan: "Protect your business with confidence!"
+    },
+    "Logistics": {
+      short: "We optimize your supply chain to ensure smooth and cost-effective operations.",
+      long: "We manage scheduling, inventory coordination, shipment tracking, and vendor communications. By optimizing your operations, we reduce costs, increase efficiency, and keep your business moving without interruptions.",
+      img: "IMG/pareja_1.png",
+      slogan: "Move smarter, faster, better with us!"
+    },
+    "Training Support": {
+      short: "We design and deliver training programs to empower your team's performance.",
+      long: "Whether onboarding new hires or upskilling existing staff, we build customized training materials, e-learning modules, and support sessions that ensure knowledge retention and measurable performance improvements.",
+      img: "IMG/pareja_1.png",
+      slogan: "Empower your team, empower your growth!"
+    },
+    "Staffing and Recruiting": {
+      short: "We connect you with the right talent to strengthen and scale your business.",
+      long: "Our recruiting experts source, screen, and onboard candidates aligned with your culture and goals. From temporary roles to long-term hires, SNAPVAS delivers top talent so your business grows with the right team in place.",
+      img: "IMG/pareja_1.png",
+      slogan: "Find the right talent, at the right time!"
+    },
+    "Devops & Secops": {
+      short: "We streamline development and secure your systems for maximum efficiency.",
+      long: "We integrate continuous deployment pipelines, automate workflows, and enhance system security. With SNAPVAS, you achieve faster releases, safer operations, and peace of mind knowing your infrastructure is protected.",
+      img: "IMG/pareja_1.png",
+      slogan: "Secure. Scale. Succeed with SNAPVAS!"
+    },
+    "Graphic Designer": {
+      short: "We transform brand vision into visual strategy, crafting designs that drive growth.",
+      long: "Our designers create compelling visuals for branding, websites, and campaigns. From sleek logos to high-impact graphics, we craft visuals that don’t just look great—they communicate your message and capture your audience.",
+      img: "IMG/pareja_1.png",
+      slogan: "Make your brand unforgettable with design!"
+    }
+  };
+
+  function openFromCard(card) {
+    if (!card) return;
+    const title = card.querySelector('h3')?.textContent?.trim() || 'Service';
+    const data = serviceDescriptions[title] || { short: "", long: "", img: "", slogan: "" };
+
+    titleEl.textContent = title;
+    descShortEl.textContent = data.short;
+    descLongEl.innerHTML = `<p>${data.long}</p>`;
+    imgEl.setAttribute("src", data.img);
+    sloganEl.textContent = data.slogan;
+    linkEl.setAttribute("href", "contact.html");
+
+    popup.style.display = 'flex';
+    popup.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    closeEl.focus();
+  }
+
+  function closePopup() {
+    popup.style.display = 'none';
+    popup.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', function (e) {
+    const hireBtn = e.target.closest('.hire-now-btn');
+    if (hireBtn) {
+      e.preventDefault();
+      const card = hireBtn.closest('.service-card');
+      if (card) openFromCard(card);
+      return;
+    }
+    const card = e.target.closest('.service-card');
+    if (card && !e.target.closest('a, button')) {
+      openFromCard(card);
+      return;
+    }
+    if (e.target === popup) closePopup();
+  });
+
+  closeEl.addEventListener('click', closePopup);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && popup.style.display === 'flex') closePopup();
+  });
+});
+</script>-->
+
+
+
+</body>
+</html>
