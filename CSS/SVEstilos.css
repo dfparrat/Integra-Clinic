@@ -1,11 +1,13 @@
 /* ===== NAVBAR STYLES ===== */
 .navbar-custom {
-    background-color: #ffffff;
+    background-color: #1F1F1F;
     border-bottom: 1px solid #e0e0e0;
     padding: 0.75rem 1rem;
     min-height: 60px;
 }
-
+.navbar-nav .nav-link {
+    color: white !important;
+}
 .navbar-brand {
     width: 130px !important;
     min-width: 130px !important;
@@ -22,8 +24,15 @@
 }
 
 .hire-now-btn {
-    background-color: #5b57a4;
-    color: white;
+    background-color:#D7B48A;
+        background: linear-gradient(
+        to right,
+        #D7B48A 0%,      /* Oro puro a la izquierda */
+        #D7B48A 45%,     /* Gradiente comienza en 45% */
+        white 55%,     /* Transición a dorado oscuro en 55% */
+        #D7B48A 100%     /* Dorado oscuro a la derecha */
+    );
+    color: #9A9A9A;
     padding: 6px 12px !important;
     border-radius: 12px;
     font-weight: 500;
@@ -524,7 +533,8 @@
 
 /* Icono */
 .service-icon {
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  /*background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+   background: #D7B48A;
   padding: 30px;
   text-align: center;
 }
