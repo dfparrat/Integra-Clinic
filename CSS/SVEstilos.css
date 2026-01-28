@@ -485,7 +485,7 @@
 
 /* --- Estilos base del service card --- */
 .service-card {
-  background: white;
+  background: black;
   border-radius: 15px;    
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -502,7 +502,7 @@
 .service-card h3 { 
   text-align: center;
   margin: 20px 0;
-  color: #333 !important;
+  color: white !important;
   font-size: 1.5rem;
   text-decoration: none !important;
 }
@@ -510,7 +510,7 @@
 /* Texto de detalles */
 .service-details {
   padding: 0 25px 25px;
-  color: #555;
+  color: white;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -520,7 +520,7 @@
 }
 
 .service-details p {
-  color: #333 !important;
+  color: white !important;
   text-decoration: none !important;
   margin: 0;
 }
