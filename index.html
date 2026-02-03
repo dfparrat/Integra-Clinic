@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="CSS/SVEstilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>   
@@ -35,7 +36,7 @@
             <div class="mobile-spacer flex-grow-1"></div>
             
             <!-- Hire Now Button -->
-            <a href="" class="btn hire-now-btn mx-2">Agendate</a>
+            <a href="contact.html" class="btn hire-now-btn mx-2">Agendate</a>
             
             <!-- Spacer to balance space -->
             <div class="mobile-spacer flex-grow-1"></div>
@@ -58,16 +59,16 @@
             <!-- Desktop Menu Items -->
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
                <!-- <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="">Planes</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Contactanos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contactanos</a></li>
               </ul>
             </div>
 
             <!-- Desktop Hire Button -->
-            <a href="" class="btn hire-now-btn ms-3 d-lg-inline-block">Agenda Ya</a>
+            <a href="contact.html" class="btn hire-now-btn ms-3 d-lg-inline-block">Agenda Ya</a>
           </div>
 
           <!-- ===== COLLAPSIBLE MENU (mobile only) ===== -->
@@ -85,30 +86,115 @@
     </header>
 
     <!-- Carrusel de banners (5 banners) -->
-    <div class="container" id="subintro">
-    <div id="Mainintro" class="row g-12">
-
-            <div id="Mainintro-s1" class="col-md-7">
-                <h2>En Integra Clinic te ofrecemos servicios odontológicos integrales, tecnología moderna y atención humana para que sonrías 
-                  con confianza desde el primer día.</h2>
-                <br>
-                <h3 style="color: #D7B48A;">En Integra Clinic, impulsamos tu bienestar con servicios odontológicos integrales.</h3>
-                <br>
-                <h4>
-                    En Integra Clinic elevamos tu experiencia con servicios odontológicos de alto nivel, 
-                    tecnología avanzada y un enfoque humano que cuida tu sonrisa sin estrés ni sorpresas.
-                </h4>
-                <div class="col-12">
-                <a href="" class="btn btn-primary" style="background-color: #EAD8BE;">Agenda Una cita </a>
-                <a href="" class="btn btn-primary" style="background-color: whitesmoke; color: #9A9A9A;">Nuestros Servicios</a>
+<div class="container luxury-container" id="subintro">
+    <div id="Mainintro" class="row g-0 align-items-stretch">
+        
+        <!-- Columna de texto con fondo de lujo -->
+        <div id="Mainintro-s1" class="col-lg-7">
+            <div class="luxury-content">
+                <!-- Elemento decorativo premium -->
+                <div class="luxury-badge">
+                    <span class="diamond-icon">◆</span>
+                    <span>EXCELENCIA DENTAL</span>
+                </div>
+                
+                <h1 class="luxury-title">
+                    Descubre la <span class="highlight">odontología de élite</span> que tu sonrisa merece
+                </h1>
+                
+                <div class="luxury-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond">◆</span>
+                    <span class="divider-line"></span>
+                </div>
+                
+                <h3 class="luxury-subtitle">
+                    En <span class="brand-highlight">Integra Clinic</span>, transformamos 
+                    <span class="italic-light">tu experiencia dental</span> en un 
+                    <span class="italic-light">momento de lujo y bienestar</span>
+                </h3>
+                
+                <ul class="luxury-features">
+                    <li>
+                        <span class="feature-icon">✓</span>
+                        <span>Tecnología de vanguardia europea</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon">✓</span>
+                        <span>Especialistas certificados internacionalmente</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon">✓</span>
+                        <span>Ambiente exclusivo y completamente privado</span>
+                    </li>
+                    <li>
+                        <span class="feature-icon">✓</span>
+                        <span>Materiales premium garantizados de por vida</span>
+                    </li>
+                </ul>
+                
+                <div class="luxury-cta">
+                    <p class="cta-legend">
+                        <span class="legend-icon">⏱</span>
+                        <em>Citas limitadas disponibles - Agenda hoy</em>
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#" class="btn-luxury btn-luxury-primary">
+                            <span class="btn-icon">📅</span>
+                            Reservar Consulta Privada
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#" class="btn-luxury btn-luxury-secondary">
+                            <span class="btn-icon">✨</span>
+                            Ver Galería de Sonrisas
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                    
+                    <div class="luxury-assurance">
+                        <span class="assurance-icon">🛡</span>
+                        <span class="assurance-text">Garantía de satisfacción y confidencialidad absoluta</span>
+                    </div>
                 </div>
             </div>
-            <div id="Mainintro-s2"  class="col-12 col-md-5 d-flex justify-content-center align-items-center">
-                <img src="IMG/Int_9.png" class="img-fluid" alt="Virtual Assistants Pro">
+        </div>
+        
+        <!-- Columna de imagen con efectos premium -->
+        <div id="Mainintro-s2" class="col-lg-5">
+            <div class="luxury-image-container">
+                <!-- Marco dorado decorativo -->
+                <div class="image-frame">
+                    <div class="frame-corner frame-tl"></div>
+                    <div class="frame-corner frame-tr"></div>
+                    <div class="frame-corner frame-bl"></div>
+                    <div class="frame-corner frame-br"></div>
+                </div>
+                
+                <!-- Imagen principal con efecto de elevación -->
+                <div class="image-wrapper">
+                    <img src="IMG/Int_9.png" class="luxury-image" alt="Clínica Dental de Lujo - Integra Clinic">
+                    
+                    <!-- Overlay de lujo -->
+                    <div class="image-overlay">
+                        <div class="overlay-text">
+                            <span class="overlay-icon">⭐</span>
+                            <span>Experiencia 5 Estrellas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sello de calidad -->
+                <div class="quality-badge">
+                    <div class="badge-content">
+                        <span class="badge-icon">🏆</span>
+                        <span class="badge-text">Certificación de Excelencia 2024</span>
+                    </div>
+                </div>
             </div>
         </div>
-      
     </div>
+</div>
   
 <section>
  <div class="container" id="moresnap">
@@ -195,7 +281,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-           <img src="IMG/admin_1.png" alt="Valoración Odontológica">
+           <img src="IMG/icono_1.png" alt="Valoración Odontológica">
           </div>
           <h3>Valoración Integral</h3>
           <a href="valoracion.html" class="card-link">
@@ -212,7 +298,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/cx_serv_1.png" alt="Ortodoncia">
+            <img src="IMG/icono_2.png" alt="Ortodoncia">
           </div>
           <h3>Ortodoncia</h3>
           <a href="ortodoncia.html" class="card-link">
@@ -229,7 +315,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/dig_mark_1.png" alt="Estética Dental">
+            <img src="IMG/icono_3.png" alt="Estética Dental">
           </div>
           <h3>Estética Dental</h3>
           <a href="estetica.html" class="card-link">
@@ -253,7 +339,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/legal_as_1.png" alt="Implantes Dentales">
+            <img src="IMG/icono_4.png" alt="Implantes Dentales">
           </div>
           <h3>Implantes Dentales</h3>
           <a href="implantes.html" class="card-link">
@@ -270,7 +356,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/Log_1.png" alt="Endodoncia">
+            <img src="IMG/icono_5.png" alt="Endodoncia">
           </div>
           <h3>Endodoncia</h3>
           <a href="endodoncia.html" class="card-link">
@@ -287,7 +373,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/trn_1.png" alt="Profilaxis Dental">
+            <img src="IMG/icono_7.png" alt="Profilaxis Dental">
           </div>
           <h3>Profilaxis y Prevención</h3>
           <a href="profilaxis.html" class="card-link">
@@ -311,7 +397,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/Staff_1.png" alt="Rehabilitación Oral">
+            <img src="IMG/icono_8.png" alt="Rehabilitación Oral">
           </div>
           <h3>Rehabilitación Oral</h3>
           <a href="rehabilitacion.html" class="card-link">
@@ -328,7 +414,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/dev_sec_1.png" alt="Cirugía Oral">
+            <img src="IMG/icono_9.png" alt="Cirugía Oral">
           </div>
           <h3>Cirugía Oral</h3>
           <a href="cirugia.html" class="card-link">
@@ -345,7 +431,7 @@
       <div class="col-lg-4">
         <div class="service-card">
           <div class="service-icon">
-            <img src="IMG/dig_mark_1.png" alt="Odontopediatría">
+            <img src="IMG/icono_10.png" alt="Odontopediatría">
           </div>
           <h3>Odontopediatría</h3>
           <a href="odontopediatria.html" class="card-link">
@@ -391,7 +477,7 @@
   <div class="carousel-item active">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/admin_1.png" alt="Valoración Odontológica">
+        <img src="IMG/icono_1.png" alt="Valoración Odontológica">
       </div>
       <h3>Valoración Integral</h3>
       <a href="valoracion.html" class="card-link">
@@ -408,7 +494,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/cx_serv_1.png" alt="Ortodoncia">
+        <img src="IMG/icono_2.png" alt="Ortodoncia">
       </div>
       <h3>Ortodoncia</h3>
       <a href="ortodoncia.html" class="card-link">
@@ -425,7 +511,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/dig_mark_1.png" alt="Estética Dental">
+        <img src="IMG/icono_3.png" alt="Estética Dental">
       </div>
       <h3>Estética Dental</h3>
       <a href="estetica.html" class="card-link">
@@ -442,7 +528,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/legal_as_1.png" alt="Implantes Dentales">
+        <img src="IMG/icono_4.png" alt="Implantes Dentales">
       </div>
       <h3>Implantes Dentales</h3>
       <a href="implantes.html" class="card-link">
@@ -459,7 +545,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/Log_1.png" alt="Endodoncia">
+        <img src="IMG/icono_5.png" alt="Endodoncia">
       </div>
       <h3>Endodoncia</h3>
       <a href="endodoncia.html" class="card-link">
@@ -476,7 +562,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/trn_1.png" alt="Profilaxis Dental">
+        <img src="IMG/icono_7.png" alt="Profilaxis Dental">
       </div>
       <h3>Profilaxis y Prevención</h3>
       <a href="profilaxis.html" class="card-link">
@@ -493,7 +579,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/Staff_1.png" alt="Rehabilitación Oral">
+        <img src="IMG/icono_8.png" alt="Rehabilitación Oral">
       </div>
       <h3>Rehabilitación Oral</h3>
       <a href="rehabilitacion.html" class="card-link">
@@ -510,7 +596,7 @@
   <div class="carousel-item">
     <div class="service-card"> 
       <div class="service-icon">
-        <img src="IMG/dev_sec_1.png" alt="Cirugía Oral">
+        <img src="IMG/icono_9.png" alt="Cirugía Oral">
       </div>
       <h3>Cirugía Oral</h3>
       <a href="cirugia.html" class="card-link">
@@ -527,7 +613,7 @@
   <div class="carousel-item">
     <div class="service-card">
       <div class="service-icon">
-        <img src="IMG/dig_mark_1.png" alt="Odontopediatría">
+        <img src="IMG/icono_10.png" alt="Odontopediatría">
       </div>
       <h3>Odontopediatría</h3>
       <a href="odontopediatria.html" class="card-link">

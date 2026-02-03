@@ -68,15 +68,26 @@
         max-height: 40px;
     }
 
-    .navbar-toggler {
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 36px;
-        z-index: 20;
-        padding: 0.25rem;
-    }
+.navbar-toggler {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    z-index: 20;
+    padding: 0.25rem;
+    border: 2px solid white !important;
+    border-radius: 4px;
+}
+
+/* Para Bootstrap 5 */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 
     .navbar-collapse {
         position: fixed !important;
@@ -88,7 +99,7 @@
         height: calc(100vh - 60px);
         transform: translateX(100%);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        background: white;
+        background: black;
         z-index: 1001;
         box-shadow: -2px 0 15px rgba(0,0,0,0.1);
     }
@@ -175,96 +186,445 @@
 }
 
 /* ===== MAIN INTRO STYLES ===== */
-#Mainintro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
-    padding: 2rem 0;
+/* Variables de color premium */
+:root {
+    --gold-primary: #D4AF37;
+    --gold-secondary: #F4E4C1;
+    --gold-light: #FFF8E7;
+    --charcoal: #1A1A1A;
+    --charcoal-light: #2D2D2D;
+    --ivory: #F8F6F2;
+    --platinum: #E5E4E2;
+    --diamond-blue: #B9D9EB;
 }
 
+/* Contenedor principal de lujo */
+.luxury-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--ivory) 0%, #FFFFFF 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxury-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+/* Columna de contenido */
 #Mainintro-s1 {
+    background: linear-gradient(145deg, #FFFFFF 0%, var(--ivory) 100%);
+    padding: 4rem 3rem;
+    position: relative;
+    border-right: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.luxury-content {
+    position: relative;
     z-index: 2;
-    padding: 2rem;
+}
+
+/* Badge de lujo */
+.luxury-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    font-weight: 500;
+}
+
+.diamond-icon {
+    color: var(--gold-primary);
+    font-size: 0.8rem;
+}
+
+/* Títulos premium */
+.luxury-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    color: var(--charcoal);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.luxury-title .highlight {
+    color: var(--gold-primary);
+    position: relative;
+    display: inline-block;
+}
+
+.luxury-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(212, 175, 55, 0.2);
+    z-index: -1;
+}
+
+/* Divisor de lujo */
+.luxury-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+}
+
+.divider-diamond {
+    color: var(--gold-primary);
+    font-size: 0.8rem;
+}
+
+/* Subtítulo */
+.luxury-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--charcoal-light);
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.brand-highlight {
+    color: var(--gold-primary);
+    font-weight: 500;
+}
+
+.italic-light {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Lista de características premium */
+.luxury-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+.luxury-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--charcoal-light);
+}
+
+.feature-icon {
+    color: var(--gold-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* CTA de lujo */
+.luxury-cta {
+    margin-top: 3rem;
+}
+
+.cta-legend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.legend-icon {
+    font-size: 1.1rem;
+}
+
+/* Botones de lujo */
+.cta-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-#Mainintro-s2 {
-    display: flex;
-    justify-content: center;
+.btn-luxury {
+    display: inline-flex;
     align-items: center;
-    padding: 1rem;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
-#Mainintro-s2 img {
-    max-width: 100%;
+.btn-luxury-primary {
+    background: linear-gradient(135deg, var(--gold-primary) 0%, #C19A53 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.btn-luxury-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
+    color: white;
+}
+
+.btn-luxury-secondary {
+    background: transparent;
+    color: var(--charcoal);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.btn-luxury-secondary:hover {
+    border-color: var(--gold-primary);
+    background: rgba(212, 175, 55, 0.05);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+.btn-arrow {
+    margin-left: auto;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.btn-luxury:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+/* Garantía de lujo */
+.luxury-assurance {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid var(--gold-primary);
+}
+
+.assurance-icon {
+    font-size: 1.3rem;
+}
+
+.assurance-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Columna de imagen de lujo */
+#Mainintro-s2 {
+    background: var(--charcoal);
+    padding: 0;
+    position: relative;
+}
+
+.luxury-image-container {
+    position: relative;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Marco decorativo */
+.image-frame {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    pointer-events: none;
+}
+
+.frame-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.frame-tl {
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--gold-primary);
+    border-left: 2px solid var(--gold-primary);
+}
+
+.frame-tr {
+    top: 0;
+    right: 0;
+    border-top: 2px solid var(--gold-primary);
+    border-right: 2px solid var(--gold-primary);
+}
+
+.frame-bl {
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid var(--gold-primary);
+    border-left: 2px solid var(--gold-primary);
+}
+
+.frame-br {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--gold-primary);
+    border-right: 2px solid var(--gold-primary);
+}
+
+/* Imagen principal */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.luxury-image {
+    width: 100%;
     height: auto;
-    object-fit: contain;
-    object-position: center;
+    display: block;
+    filter: brightness(1.05) contrast(1.05);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-wrapper:hover .luxury-image {
+    transform: scale(1.02);
+}
+
+/* Overlay de imagen */
+.image-overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.overlay-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.overlay-icon {
+    color: var(--gold-primary);
+}
+
+/* Badge de calidad */
+.quality-badge {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    background: rgba(212, 175, 55, 0.95);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    transform: rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.badge-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Responsive para móviles */
+@media (max-width: 992px) {
+    .luxury-container {
+        padding: 2rem 1rem;
+    }
+    
+    #Mainintro-s1 {
+        padding: 3rem 2rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+    
+    .luxury-title {
+        font-size: 2.5rem;
+    }
+    
+    .luxury-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .luxury-image-container {
+        padding: 2rem;
+    }
+    
+    .quality-badge {
+        top: 2rem;
+        right: 2rem;
+        transform: rotate(0);
+    }
 }
 
 @media (max-width: 768px) {
-    #Mainintro-s1 h2 {
-        font-size: 1.4rem;
+    .luxury-title {
+        font-size: 2rem;
     }
-
-    #Mainintro-s1 h3 {
+    
+    .luxury-subtitle {
         font-size: 1.1rem;
     }
-
-    #Mainintro-s1 h4 {
+    
+    .btn-luxury {
+        padding: 1rem 1.5rem;
         font-size: 1rem;
     }
-    #Mainintro {
+    
+    .cta-buttons {
         flex-direction: column;
-        padding: 1rem 0;
     }
-    #Mainintro .col-12 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-    }
-    #Mainintro-s1 {
-        order: 2;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    #Mainintro-s2 {
-        order: 1;
-        padding: 1rem;
-        width: 100%;
-    }
-
-    #Mainintro-s2 img {
-        width: 100%;
-        height: auto;
-    }
-
-    #Mainintro .btn {
-        display: inline-block;
-        width: auto;
-        margin-bottom: 0;
-        padding: 0.5rem 1rem;
+    
+    .luxury-image-container {
+        padding: 1.5rem;
     }
 }
-
-@media (min-width: 769px) {
-    #Mainintro {
-        align-items: stretch; /* Hace que ambas columnas tengan la misma altura */
-    }
-
-    #Mainintro-s2 img {
-        height: 500px;         /* La imagen ocupa toda la altura de su columna */
-        width: auto;          /* Mantiene la proporción */
-        max-height: 100%;     /* Evita desbordes */
-        object-fit: contain;  /* Ajusta sin recortar */
-    }
-} 
-
 
 /*===== moresnap section styles =====*/
 #moresnap {
@@ -1155,6 +1515,7 @@ a.card-link p {
 }
 
 .apply-btn:hover {
+  background: #1a2245;
 }
 
 
