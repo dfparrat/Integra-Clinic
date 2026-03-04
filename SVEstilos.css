@@ -1540,7 +1540,17 @@ a.card-link p {
     right: 20px;
     z-index: 9999;
 }
-
+@media screen and (max-width: 768px) {
+    #fastbots-widget-container {
+        position: fixed !important;
+        bottom: 15px !important; /* Distancia desde abajo */
+        right: 15px !important;  /* Distancia desde la derecha */
+        width: 90vw !important;  /* Ancho relativo al viewport */
+        max-width: 350px !important; /* Límite para que no sea gigante */
+        height: 60vh !important; /* Altura para que no tape todo el sitio */
+        z-index: 999999 !important;
+    }
+}
 
 
 
